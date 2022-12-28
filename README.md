@@ -1,7 +1,7 @@
 # eureka-solver
 solves the board game [Dr. Eureka](https://boardgamegeek.com/boardgame/181345/dr-eureka)
 
-the function returns the list of moves that takes you from your current configuration of tubes to the one you are trying to reach with the smallest number of moves
+the function returns the list of moves that takes you from an initial configuration of tubes to a final configuration with the smallest number of moves
 
 The function takes in 6 arrays, tube_1, tube_2, tube_3, final_tube_1, final_tube_2, and final_tube_3. The tubes (tube_1, tube_2, and tube_3) in total contain 6 balls, which are represented by elements in the arrays, each element being a string named either "red", "blue", or "green". There are 2 red balls, 2 blue balls, and 2 green balls. A tube can contain up to only 5 balls at once. The three tubes can pass along balls from one to another by popping elemtns off themselves and pushing elements into other tubes. For example, if the tubes looked something like this:
 ```JavaScript
